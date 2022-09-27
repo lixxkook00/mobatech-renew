@@ -1,0 +1,376 @@
+
+/* PC only */
+
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+/* Tablet to PC low resolution */
+@media (min-width: 985px) and (max-width: 1200px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+    
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    .main-content {
+        background-size: auto 100%;
+        color: #fff;
+    }
+
+    .main-content-paragraph {
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .matches .container{
+        padding-top: 7vh;
+    }
+
+    .matches-card:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .main-content-block{
+        margin-top: 5vh;
+    }
+
+    .matches-title img {
+        width: 20px;
+        height: 30px;
+        margin-right: 12px;
+    }
+
+    .matches-card-team{
+        width: 70px;
+    }
+
+    .matches .primary-charac{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .matches .row{
+        flex-direction: column-reverse;
+    } */
+    
+    .matches .primary-charac img{
+        width: 60%;
+    }
+
+    .tokenomic-main-charac{
+        width: 38%;
+    }
+
+    .tokenomic-main{
+        transform: translateY(0);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tokenomic-main-cirle{
+        width: 60%;
+        margin: 10px 0;
+    }
+
+    .tokenomic-right{
+        padding-left: 0;
+    }
+
+    .tokenomic-list{
+        justify-content: space-around;
+    }
+
+    .tokenomic-main-cirle--out {
+        top: 13.8%;
+        left: 26.7%;
+        width: 47%;
+    }
+
+    .tokenomic-knife{
+        width: 20%;
+    }
+
+    .tokenomic-knife--left {
+        left: 13%;
+    }
+
+    .tokenomic-knife--right {
+        right: 13%;
+    }
+}
+
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-tl{
+        display: none !important;
+    }
+
+    .main-content-block{
+        padding-right: 10vw;
+    }
+
+    .centering-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-wrapper {
+        padding-top: 70px;
+    }
+
+    .matches-card-team {
+        width: 120px;
+    }
+
+    .tokenomic-title{
+        text-align: center;
+    }
+
+    .tokenomic-item{
+        width: 33%;
+        text-align: center;
+    }
+
+    .tokenomic-name{
+        text-align: center;
+    }
+
+    .tokenomic-title{
+        margin-bottom: 0;
+    }
+
+    .tokenomic-li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-wrapper {
+        padding-top: 20vh;
+    }
+
+    .intro .primary-title{
+        text-align: center;
+    }
+
+    .intro .paragraph{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .intro .primary-charac{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .primary-charac img{
+        width: 70%;
+        margin-top: 3vh;
+    }
+
+    .intro-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-title img{
+        width: 70%;
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none !important;
+    }
+
+    .main-content-block{
+        padding-right: 5vw;
+    }
+
+    .footer-letter{
+        width: 95%;
+        flex-direction: column ;
+    }
+
+    .footer-letter-title{
+        margin-bottom: 3px;
+    }
+
+    .footer-letter{
+        padding-top: 4px;
+    }
+
+    .partner{
+        padding-bottom: 59px;
+    }
+
+    .footer-center{
+        padding: 38px 0 9px;
+    }
+
+    .tokenomic-title{
+        margin-bottom: 0;
+        font-size: 22px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .glow--1{
+        left: 64.4%;
+    }
+
+    .tokenomic-name {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .tokenomic-text{
+        font-size: 14px;
+    }
+
+    .tokenomic-block {
+        padding-left: 10px;
+    }
+
+    .tokenomic-value-left {
+        font-size: 22px;
+    }
+
+    .tokenomic-li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tokenomic-value{
+        font-size: 14px;
+    }
+
+    .tokenomic-desc{
+        min-height: unset;
+        font-size: 12px;
+    }
+
+    .tokenomic-desc,
+    .tokenomic-value{
+        text-align: center;
+    }
+
+    .intro-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .paragraph{
+        font-size: 13px;
+    }
+
+    .primary-charac{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .paragraph,
+    .intro .primary-title{
+        text-align: center;
+    }
+
+    .intro .primary-charac img{
+        width: 70%;
+        margin-top: 3vh;
+    }
+
+    .primary-title{
+        font-size: 16px;
+    }
+
+    .intro-title img{
+        width: 60%;
+    }
+
+    .card-wrapper{
+        height: 180px;
+    }
+
+    .card-name{
+        font-size: 12px;
+    }
+
+    .card-date{
+        font-size: 12px;
+    }
+
+    .footer-title{
+        font-size: 16px;
+    }
+
+    .partner-img{
+        height: 26px;
+    }
+
+    .footer-nav-item{
+        font-size: 12px;
+    }
+
+    .footer-letter-input{
+        width: 94%;
+    }
+
+    .footer-social-icon{
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer-wrapper{
+        justify-content: center;
+    }
+
+    .partner{
+        margin-top: 50px;
+    }
+}
+
+/* 500*/
+@media (min-width: 500px) and (max-width: 742px) {
+    .hidden-500plus {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hidden-500{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .main-content{
+        width: 100% !important;
+    }
+}
+
