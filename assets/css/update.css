@@ -52,6 +52,7 @@
 
 .login-form-div{
     display: flex;
+    align-items: center;
 }
 
 .login-form-div:not(:last-child){
@@ -63,10 +64,9 @@
     border-radius: 10px;
     padding: 6px 16px;
     border: 2px solid #fff;
-    height: 32px;
+    /* height: 32px; */
     background-color: transparent;
     flex: 1;
-
     color: #fff;
 }
 
@@ -358,9 +358,75 @@ img.wallet-icon {
     transition: all 0.2s ease-in-out;
 }
 
+.wallet-control-item.active,
 .wallet-control-item:hover{
     cursor: pointer;
     background-color: #5EB6D2;
+}
+
+.deposit .wallet-control{
+    margin-top: 0;
+}
+
+.deposit .wallet-control-item{
+    padding: 6px 10px;
+}
+
+.deposit .wallet-control-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.deposit-form form{
+    width: 100%;
+    max-width: 680px;
+    margin: 10px 0;
+}
+
+.deposit .primary-button{
+    background-color: #000;
+    color: #fff;
+}
+
+select:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.deposit input{
+    border-color: #000;
+    color: #000;
+    height: 40px;
+}
+
+.deposit select {
+    border-radius: 10px;
+    padding: 6px 16px;
+    border: 2px solid #000;
+    background-color: transparent;
+    flex: 1;
+    color: #000;
+}
+
+.deposit label{
+    font-size: 16px;
+    min-width: 185px;
+}
+
+.with-draw-box{
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #275E84;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 640px;
+}
+
+.with-draw-item:not(:last-child){
+    margin-right: 20px;
+}
+
+.with-draw-item{
+    min-width: 40%;
 }
 
 /* Mobile & Tablet */
@@ -434,5 +500,13 @@ img.wallet-icon {
     .comission-item{
         border: none !important;
         width: 100%;
+    }
+
+    .deposit .wallet-control-item {
+        width: 45%;
+    }
+
+    .deposit-form form{
+        margin: 6px 0;
     }
 }

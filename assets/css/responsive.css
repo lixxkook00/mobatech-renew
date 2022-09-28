@@ -111,6 +111,16 @@
     .tokenomic-knife--right {
         right: 13%;
     }
+
+    .login-form-div input{
+        font-size: 22px;
+    }
+
+    .login-form-div input,
+    .login-form-div select,
+    .login-form-div label {
+        width: 100%;
+    }
 }
 
 
