@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/update.css">
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product">
+                    <i class="fa-solid fa-people-group"></i> My Team
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial">
+                    <i class="fa-solid fa-coins"></i> Staking
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="">
+                    <i class="fa-solid fa-store"></i> Shop
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> SIGN IN
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header header-dashboard hidden-m-t">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="header-nav">
+                    <a href="" class="header-nav-item active">
+                        Dashboard
+                    </a>
+                    <a href="" class="header-nav-item">
+                        My Team
+                    </a>
+                    <a href="" class="header-nav-item">
+                        Staking
+                    </a>
+                    <a href="" class="header-nav-item">
+                        Shop
+                    </a>
+                    <a href="" class="header-nav-item header-nav-item--user">
+                        <span class="yellow-text"><i class="fa-solid fa-user"></i></span>
+                        PhuGyPhuGy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-bg">
+
+        <div class="container pb-2">
+            <!-- infor -->
+            <div class="wrrapper-2">
+                <div class="d-flex primary-box">
+                    <div class="centering h-100">
+                        <img src="./assets/images/avt.png" alt="" class="dashboard-avt">
+                    </div>
+
+                    <div class="dashboard-infor">
+                        <div class="dashboard-name">
+                            PhuGyPhuGy
+                        </div>
+                        <div class="dashboard-fullname">
+                            Phu Gy Shyt
+                        </div>
+
+                        <div class="dashboard-package primary-gradient-text">
+                            20,000 OBA PACKAGE
+                        </div>
+
+                        <div class="dashboard-title">
+                            CONTRACT
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="dashboard-ref">
+                                0x8B8617f9BE6b8B8617f9E6b9962a4238B8617f9BE6b99
+                            </div>
+                            <div class="dashboard-ref-button">
+                                Coppy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qr-wrapper primary-box d-flex align-items-center justify-content-between">
+                    <div class="qr-box">
+                        <img src="./assets/images/qr.png" alt="" class="qr-img">
+
+                        <div class="qr-link">
+                            <div class="qr-link-side text-center">
+                                LEFT
+                            </div>
+                            <div class="qr-link-value">
+                                https://mobatech.io/17f9E6b9962a4238B8617f9BE6b99
+                            </div>
+                        </div>
+
+                        <div class="dashboard-ref-button">
+                            Coppy
+                        </div>
+                    </div>
+
+                    <div class="qr-box">
+                        <img src="./assets/images/qr.png" alt="" class="qr-img">
+
+                        <div class="qr-link">
+                            <div class="qr-link-side text-center">
+                                RIGHT
+                            </div>
+                            <div class="qr-link-value">
+                                https://mobatech.io/
+                            </div>
+                        </div>
+
+                        <div class="dashboard-ref-button">
+                            Coppy
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- comission -->
+            <div class="primary-box">
+                <div class="comission-wrapper d-flex justify-content-between align-items-center">
+                    <div class="comission-item">
+                        <div class="comission-title text-center">
+                            REFERRAL COMMISSION
+                        </div>
+                        <div class="comission-value primary-gradient-text text-center">
+                            1,000.00 OBA
+                        </div>
+                    </div>
+
+                    <div class="comission-item">
+                        <div class="comission-title text-center">
+                            PAIR COMMISSION
+                        </div>
+                        <div class="comission-value primary-gradient-text text-center">
+                            1,000.00 OBA
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- wallet -->
+            <div class="primary-box">
+                <table class="wallet-table">
+                    <tr>
+                        <th></th>
+                        <th>SYMBOL</th>
+                        <th>BALANCE</th>
+                    </tr>
+                    <tbody class="wallet-table-body">
+                        <tr>
+                            <td>
+                                <img src="./assets/images/USDT-icon.png" alt="" class="wallet-icon">
+                            </td>
+                            <td>USDT</td>
+                            <td class="wallet-table-value">1,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./assets/images/OBA-icon.png" alt="" class="wallet-icon">
+                            </td>
+                            <td>OBA</td>
+                            <td class="wallet-table-value">1,000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="wallet-control d-flex align-items-center justify-content-around">
+                    <a href="#" class="wallet-control-item">
+                        DEPOSIT
+                    </a>
+                    <a href="" class="wallet-control-item">
+                        WITHDRAW
+                    </a>
+                    <a href="" class="wallet-control-item">
+                        TRANSFER
+                    </a>
+                    <a href="" class="wallet-control-item">
+                        SWAP
+                    </a>
+                </div>
+            </div>
+
+            <!-- transition -->
+            <div class="primary-box transition">
+                <div class="comission-title">
+                    TRANSACTION
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer footer-db">
+        <div class="footer-infor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="footer-fire centering hidden-m-t">
+                            <img src="./assets/images/fire.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer-center">
+
+                            <div class="footer-nav d-flex align-items-center justify-content-around">
+                                <div class="footer-nav-item">
+                                    Home
+                                </div>
+
+                                <div class="footer-nav-item">
+                                    News
+                                </div>
+
+                                <div class="footer-nav-item">
+                                    Support
+                                </div>
+
+                                <div class="footer-nav-item">
+                                    NFT Marketplace
+                                </div>
+
+                            </div>
+                            <div class="footer-social d-flex align-items-cente justify-content-center">
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-fire centering hidden-m-t">
+                            <img src="./assets/images/fire.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-verify">
+            © 2022 Mobatech
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const $query = document.querySelector.bind(document)
+    const $$query = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        $query('.soft-menu').classList.toggle('open')
+        $query('.soft-menu__list').classList.toggle('open')
+    }
+
+    $$query('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+</script>
