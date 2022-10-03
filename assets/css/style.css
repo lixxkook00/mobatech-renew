@@ -336,7 +336,7 @@ a:hover{
 .primary-bg{
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .primary-title{
@@ -1038,3 +1038,4 @@ input:focus-visible{
 .ldio-x0x70zoois div {
     box-sizing: content-box;
 }
+
