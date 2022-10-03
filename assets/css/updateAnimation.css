@@ -544,6 +544,21 @@ svg[id="thunder_svg2"] path {
     }
 }
 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .roadmap-block-item img{
+        height: 13vh;
+    }
+
+    .intro .paragraph{
+        margin-bottom: 7vh;
+    }
+
+    #thunder {
+        transform: scale(1.3);
+    }
+}
+  
+
 @keyframes roadmap-child {
   0% { 
     filter: drop-shadow(0 0 8px #fff);
