@@ -13,9 +13,16 @@
     gap: 10px;
 }
 
-.grid-4{
+.grid-4-1,
+.grid-4-2{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.grid-3-1{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
 }
 
@@ -26,6 +33,7 @@
 .market-title{
     margin: 20px 0 5px;
     font-size: 30px;
+    letter-spacing: 2px;
 }
 
 .market-card{
@@ -76,4 +84,119 @@
 .market-card-heart,
 .market-card-price{
     font-weight: 600;
+}
+
+.collection{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collection-content{
+    position: relative;
+}
+
+.collection-author{
+    height: 65px;
+    width: 65px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%);
+}
+
+.collection-img{
+    height: 130px;
+    overflow: hidden;
+}
+
+.collection-img img,
+.collection-author img{
+    object-fit: cover;
+}
+
+.collection-content{
+    padding: 40px 30px 20px;
+    background-color: #242434;
+    color: #fff;
+    text-align: center;
+    font-family: 'Formular';
+    font-size: 14px;
+}
+
+.collection-currency{
+    color: #50505C;
+}
+
+.sell-card{
+    padding: 40px 20px;
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: #242434;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.sell-card--wallet{
+    background-image: url(../images/wallet-bg.png);
+}
+
+.sell-card--setup{
+    background-image: url(../images/share-bg.png);
+}
+
+.sell-card--price{
+    background-image: url(../images/set-bg.png);
+}
+
+.sell-icon{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.sell-desc{
+    font-family: 'Formular';       
+}
+
+.seller{
+    color: #fff;
+    padding: 5px;
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.seller-level{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.seller-avt{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-right: 10px;
+}
+
+
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .grid-4-1,
+    .grid-3-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .grid-4-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    
 }
