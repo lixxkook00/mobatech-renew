@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/update.css">
+    <link rel="stylesheet" href="./assets/css/market.css">
+    <link rel="stylesheet" href="./assets/css/game.css">
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about">
+                    <i class="fa-solid fa-house"></i> Game Home
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product">
+                    <i class="fa-solid fa-people-group"></i> Tournament
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial">
+                    <i class="fa-solid fa-gamepad"></i> Games
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="">
+                    <i class="fa-solid fa-wifi"></i> Stream Now
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-shop"></i> NFT Market
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header header-dashboard hidden-m-t">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="header-nav">
+
+                    <a href="" class="header-nav-item header-nav-item--user">
+                        <span class="yellow-text">
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </span> 1,000,000.00 OBA
+                    </a>
+
+                    <a href="" class="header-nav-item header-nav-item--user">
+                        <span class="yellow-text"><i class="fa-solid fa-user"></i></span>
+                        PhuGyPhuGy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="game">
+        <!-- Banner -->
+        <div class="game-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="centering h-100">
+                            <div class="game-banner-content">
+                                <div class="game-banner-title">
+                                    A
+                                    <span class="game-text">
+                                        New Home
+                                    </span> For
+                                    <br>
+                                    Mobatechgaming
+                                </div>
+                                <div class="game-button">
+                                    Play Game
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="game-banner-img centering">
+                            <img src="/assets/images/game/charac-banner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour -->
+            <div class="container">
+                <div class="live-card grid-4-2">
+                    <div class="live-card-item">
+                        <img src="/assets/images/game/live-card-1.png" alt="" class="live-card-img">
+
+                        <div class="live-card-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="/assets/images/game/live-card-avt.png" alt="" class="live-card-avt">
+
+                                <div class="d-flex flex-column">
+                                    <div class="live-card-name">
+                                        The World Championships
+                                    </div>
+                                    <div class="live-card-date">
+                                        07 Aug 20:00 PM
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="live-card-process">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="live-card-slot">
+                                    32 SPOTS
+                                </div>
+                                <div class="live-card-slot">
+                                    12 LEFT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="live-card-item">
+                        <img src="/assets/images/game/live-card-1.png" alt="" class="live-card-img">
+
+                        <div class="live-card-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="/assets/images/game/live-card-avt.png" alt="" class="live-card-avt">
+
+                                <div class="d-flex flex-column">
+                                    <div class="live-card-name">
+                                        The World Championships
+                                    </div>
+                                    <div class="live-card-date">
+                                        07 Aug 20:00 PM
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="live-card-process">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="live-card-slot">
+                                    32 SPOTS
+                                </div>
+                                <div class="live-card-slot">
+                                    12 LEFT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="live-card-item">
+                        <img src="/assets/images/game/live-card-1.png" alt="" class="live-card-img">
+
+                        <div class="live-card-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="/assets/images/game/live-card-avt.png" alt="" class="live-card-avt">
+
+                                <div class="d-flex flex-column">
+                                    <div class="live-card-name">
+                                        The World Championships
+                                    </div>
+                                    <div class="live-card-date">
+                                        07 Aug 20:00 PM
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="live-card-process">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="live-card-slot">
+                                    32 SPOTS
+                                </div>
+                                <div class="live-card-slot">
+                                    12 LEFT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="live-card-item">
+                        <img src="/assets/images/game/live-card-1.png" alt="" class="live-card-img">
+
+                        <div class="live-card-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="/assets/images/game/live-card-avt.png" alt="" class="live-card-avt">
+
+                                <div class="d-flex flex-column">
+                                    <div class="live-card-name">
+                                        The World Championships
+                                    </div>
+                                    <div class="live-card-date">
+                                        07 Aug 20:00 PM
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="live-card-process">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="live-card-slot">
+                                    32 SPOTS
+                                </div>
+                                <div class="live-card-slot">
+                                    12 LEFT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game -->
+        <section class="game-section">
+            <div class="container">
+                <div class="game-menu">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="game-menu-title">
+                            Game
+                        </div>
+
+                        <div class="game-menu-search d-flex align-items-center">
+                            <input type="text" placeholder="Search">
+                            <div class="game-menu-search-button centering">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-list grid-4-2">
+                    <a href="#" class="game-item">
+                        <div class="centering game-item-img">
+                            <img src="https://t.vietgiaitri.com/2021/1/4/khi-gai-xinh-tiktok-dung-thi-phi-nguoi-bi-to-la-tuesday-cong-khai-nguoi-nhan-mua-gach-da-tu-fandom-blackpink-81d-5509317.jpeg"
+                                alt="" class="">
+                        </div>
+                        <div class="game-item-name text-center">
+                            LOL
+                        </div>
+                    </a>
+
+                    <a href="#" class="game-item">
+                        <div class="centering game-item-img">
+                            <img src="https://zilo.vn/wp-content/uploads/2022/03/hinh-anh-gai-xinh-tiktok-33.jpg" alt=""
+                                class="">
+                        </div>
+                        <div class="game-item-name text-center">
+                            LOL
+                        </div>
+                    </a>
+
+                    <a href="#" class="game-item">
+                        <div class="centering game-item-img">
+                            <img src="https://www.bt.com/content/dam/bt/portal/images/articles/tv/tv-comedy-emily-in-paris-key-art.jpg"
+                                class="">
+                        </div>
+                        <div class=" game-item-name text-center">
+                            LOL
+                        </div>
+                    </a>
+
+                    <a href="#" class="game-item">
+                        <div class="centering game-item-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnr_4ezvU07A0XBd5QdblYSM_wVbycOuSdsDbXfgypM8bbu1_jGKa_0g7Y4DCf5s4VTYY&usqp=CAU"
+                                alt="" class="">
+                        </div>
+                        <div class="game-item-name text-center">
+                            LOL
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stream -->
+        <section class="stream-section">
+            <div class="container">
+                <div class="game-menu">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="game-menu-title">
+                            Stream Now
+                        </div>
+
+                        <div class="viewall">
+                            View more
+                        </div>
+                    </div>
+                </div>
+                <div class="live-card grid-4-2">
+                    <div class="live-card-item">
+                        <img src="/assets/images/game/pewdiepie.png" alt="" class="stream-img">
+
+                        <div class="live-card-content">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="/assets/images/game/avt01.png" alt="" class="live-card-avt">
+
+                                <div class="d-flex flex-column">
+                                    <div class="live-card-name">
+                                        GTAV Bang Bang
+                                    </div>
+                                    <div class="live-card-date">
+                                        pewdiepie
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-end">
+                                <div class="live-card-date">
+                                    <i class="fa-solid fa-users"></i> 299
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Market NFT -->
+        <section class="nft-section">
+            <div class="container">
+                <div class="game-menu">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="game-menu-title">
+                            NFT Market
+                        </div>
+
+                        <div class="viewall">
+                            View more
+                        </div>
+                    </div>
+                    <div class="grid-4-2">
+                        <div class="market-card box box--1">
+                            <div class="market-card-img market-card-img--1">
+                                <img src="./assets/images/game/1.png" alt="">
+                            </div>
+
+                            <div class="market-card-name">
+                                AnimeSailorClub #304
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="market-card-price">
+                                    2000 OBA
+                                </div>
+                                <div class="market-card-heart">
+                                    <i class="fa-regular fa-heart"></i> 88
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="market-card box box--2">
+                            <div class="market-card-img market-card-img--2">
+                                <img src="./assets/images/game/2.png" alt="">
+                            </div>
+
+                            <div class="market-card-name">
+                                AnimeSailorClub #304
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="market-card-price">
+                                    2000 OBA
+                                </div>
+                                <div class="market-card-heart">
+                                    <i class="fa-regular fa-heart"></i> 88
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="market-card box box--3">
+                            <div class="market-card-img market-card-img--3">
+                                <img src="./assets/images/game/3.png" alt="">
+                            </div>
+
+                            <div class="market-card-name">
+                                AnimeSailorClub #304
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="market-card-price">
+                                    2000 OBA
+                                </div>
+                                <div class="market-card-heart">
+                                    <i class="fa-regular fa-heart"></i> 88
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="market-card box box--4">
+                            <div class="market-card-img market-card-img--4">
+                                <img src="./assets/images/game/4.png" alt="">
+                            </div>
+
+                            <div class="market-card-name">
+                                AnimeSailorClub #304
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="market-card-price">
+                                    2000 OBA
+                                </div>
+                                <div class="market-card-heart">
+                                    <i class="fa-regular fa-heart"></i> 88
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer footer-db">
+        <div class="footer-infor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="footer-fire centering hidden-m-t">
+                            <img src="./assets/images/fire.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer-center">
+
+                            <div class="footer-nav d-flex align-items-center justify-content-around">
+                                <div class="footer-nav-item">
+                                    Home
+                                </div>
+
+                                <div class="footer-nav-item">
+                                    News
+                                </div>
+
+                                <div class="footer-nav-item">
+                                    Support
+                                </div>
+
+                                <div class="footer-nav-item">
+                                    NFT Marketplace
+                                </div>
+
+                            </div>
+                            <div class="footer-social d-flex align-items-cente justify-content-center">
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="footer-social-icon centering">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-fire centering hidden-m-t">
+                            <img src="./assets/images/fire.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-verify">
+            © 2022 Mobatech
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const $query = document.querySelector.bind(document)
+    const $$query = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        $query('.soft-menu').classList.toggle('open')
+        $query('.soft-menu__list').classList.toggle('open')
+    }
+
+    $$query('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+    // $$query('.market-card').forEach(element => {
+    //     element.addEventListener('mousemove', (event) => {
+    //         console.log(event.offsetX, element.offsetWidth);
+    //         // console.log(event.offsetY,);
+    //         const e = -(element.offsetWidth / 2 - event.offsetX) / 20
+    //         const n = (element.offsetHeight / 2 - event.offsetY) / 20
+    //         element.style.transform = "rotateY(" + n + "deg) rotateX(" + e + "deg)"
+    //     })
+
+    //     element.addEventListener('mouseout', (event) => {
+    //         // console.log("mouseout", onmouseover)
+    //         element.style.transform = "unset"
+    //     })
+    // })
+</script>
