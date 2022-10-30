@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Mobatech Game</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
@@ -464,6 +464,7 @@
         </section>
     </div>
 
+    <!-- Footer -->
     <div class="footer footer-db">
         <div class="footer-infor">
             <div class="container">
@@ -523,6 +524,22 @@
             © 2022 Mobatech
         </div>
     </div>
+
+    <!-- Loading -->
+    <div id="loading" class="">
+        <div class="loading-logo centering h-100">
+            <img src="/assets/images/game/logo.png" alt="">
+        </div>
+        <div id="load">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+    </div>
 </body>
 
 </html>
@@ -541,18 +558,9 @@
             toggleNavMobile()
         }
     })
-    // $$query('.market-card').forEach(element => {
-    //     element.addEventListener('mousemove', (event) => {
-    //         console.log(event.offsetX, element.offsetWidth);
-    //         // console.log(event.offsetY,);
-    //         const e = -(element.offsetWidth / 2 - event.offsetX) / 20
-    //         const n = (element.offsetHeight / 2 - event.offsetY) / 20
-    //         element.style.transform = "rotateY(" + n + "deg) rotateX(" + e + "deg)"
-    //     })
 
-    //     element.addEventListener('mouseout', (event) => {
-    //         // console.log("mouseout", onmouseover)
-    //         element.style.transform = "unset"
-    //     })
-    // })
+    // loading animation
+    window.addEventListener('load', (event) => {
+        $query('#loading').style.display = "none"
+    })
 </script>
